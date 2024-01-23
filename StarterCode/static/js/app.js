@@ -63,7 +63,7 @@ function Bubblechart(sample){
        // Get the otu_ids, otu_labels and sample values
        let otu_ids = result.otu_ids;
        let otu_labels = result.otu_labels;
-       let sample_values = result.samples_values;
+       let sample_values = result.sample_values;
 
        // Set up the trace for the chart
         let trace1 = {
@@ -82,6 +82,7 @@ function Bubblechart(sample){
         let layout = {
             title: 'Bacteria cultures per Sample',
             hovermode: 'closest',
+            margin: {t: 30},
             xaxis: {title: "OTU ID"},
         };
 
